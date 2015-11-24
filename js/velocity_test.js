@@ -32,10 +32,13 @@ $(document).ready(function() {
 		$div2.velocity("reverse", {duration: 2000});
 	})
 
+	 // SCROLL
+
 	$('#scroll').click(function() {
 		$div3.velocity("scroll", {duration: 1000, offset: "-50px", easing: [250, 10] })
 		$div3.velocity({opacity: 1, translateZ: "200px", rotateZ: "45deg"})
 		$div3.velocity("reverse", {duration: 2000});
 	})
+
 	
 })
