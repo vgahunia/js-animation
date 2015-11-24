@@ -46,14 +46,15 @@ $(document).ready(function() {
 
 	$.Velocity({ e: $('#button_bay'), p: {opacity: 1, scale: 1}, o: { duration: 1200, easing: "linear"} });
 
-var loadingSequence = [
+var sequence = [
 	{ e: $('#box4'), p: { translateX: 100, opacity: 1 }, o: { duration: 1000 } },
 	{ e: $('#box5'), p: { translateX: 200, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
-	{ e: $('#box6'), p: { translateX: 300, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } }
+	{ e: $('#box5'), p: {backgroundColor: '#9f8', top: '+=100px'}, o: {duration: 1000, sequenceQueue: false }},
+	{ e: $('#box6'), p: { translateX: 300, opacity: 1 }, o: { duration: 1000 } }
 ];
 
 
-	$.Velocity.RunSequence(loadingSequence);
+	$.Velocity.RunSequence(sequence);
 
 	
 })
