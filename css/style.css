@@ -86,7 +86,7 @@ body {
 		transform: translate(100px, 50px);
 	}
 	100% {
-		transform: translate(100px, 100px);
+		transform: translate(0, 0);
 	}
 }
 
@@ -101,4 +101,12 @@ body {
 #box1:hover {
 	background-color: rgb(150,150,255);
 }
+
+/* JQUERY UI Animations - better practice to move this into a js file using variables */
+
+/*.fadeInAndMove {
+	opacity: 1;
+	top: 50px;*/
+}
+
 

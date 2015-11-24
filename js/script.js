@@ -1,4 +1,6 @@
 
+
+
 $(document).ready(function() {
 	var $div = $('#box1');
 	var $div2 = $('#box2');
@@ -39,6 +41,10 @@ $(document).ready(function() {
 		$div3.velocity({opacity: 1, translateZ: "200px", rotateZ: "45deg"})
 		$div3.velocity("reverse", {duration: 2000});
 	})
+
+	// JQUERY UI
+
+	$('#box3').velocity(fadeIn.p, fadeIn.o);
 
 	
 })
