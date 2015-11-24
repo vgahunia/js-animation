@@ -1,11 +1,15 @@
 
 var fadeIn = {
 	p: {
-		opacity: .3,
+		opacity: 1,
 		top: "50px"
 	},
-	o: {
+	oFast: {
 		duration: 1000,
+		easing: "linear"
+	},
+	oSlow: {
+		duration: 3000,
 		easing: "linear"
 	}
 };

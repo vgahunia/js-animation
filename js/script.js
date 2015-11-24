@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function() {
 	var $div = $('#box1');
 	var $div2 = $('#box2');
@@ -44,7 +42,18 @@ $(document).ready(function() {
 
 	// JQUERY UI
 
-	$('#box3').velocity(fadeIn.p, fadeIn.o);
+	// $('#button_bay').velocity(fadeIn.p, fadeIn.oFast);
+
+	$.Velocity({ e: $('#button_bay'), p: {opacity: 1, scale: 1}, o: { duration: 1200, easing: "linear"} });
+
+var loadingSequence = [
+	{ e: $('#box4'), p: { translateX: 100, opacity: 1 }, o: { duration: 1000 } },
+	{ e: $('#box5'), p: { translateX: 200, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
+	{ e: $('#box6'), p: { translateX: 300, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } }
+];
+
+
+	$.Velocity.RunSequence(loadingSequence);
 
 	
 })

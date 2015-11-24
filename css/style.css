@@ -12,6 +12,7 @@ body {
 	padding: 20px;
 	border-radius: 50px;
 	border: 4px solid rgb(20, 70, 10);
+	opacity: 0;
 }
 
 #button_bay h1 {
@@ -43,6 +44,18 @@ body {
 	background-color: white;
 }
 
+#stage3 {
+	width: 90%;
+	height: 400px;
+}
+
+.stage3_box {
+	position: relative;
+	text-align: center;
+	width: 150px;
+	background-color: rgb(204, 156, 139);
+}
+
 #box1 {
 	background-color: rgb(245, 215, 120);
 	color: rgb(120, 90, 22);
@@ -50,7 +63,6 @@ body {
 	margin: 20px auto;
 	text-align: center;
 	position: relative;
-
 }
 
 #box2 {
@@ -71,6 +83,21 @@ body {
 	position: relative;
 }
 
+#box4 {
+	position: relative;
+	opacity: .3;
+}
+
+#box5 {
+	position: relative;
+	opacity: .3;
+}
+
+#box6 {
+	position: relative;
+	opacity: .3;
+}
+
 /* CSS ANIIMATIONS */
 
 @keyframes myAnimation {
@@ -83,7 +110,10 @@ body {
 		transform: scale(1, 1);
 	}
 	50% {
-		transform: translate(100px, 50px);
+		transform: translate(40px, 150px);
+	}
+	75% {
+		transform: translate(-40px, 150px);
 	}
 	100% {
 		transform: translate(0, 0);
@@ -91,7 +121,7 @@ body {
 }
 
 #box2 {
-	animation: myAnimation 6s;
+	animation: myAnimation 5s;
 }
 
 #box1 {
