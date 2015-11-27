@@ -40,7 +40,7 @@ $(document).ready(function() {
 		$div3.velocity("reverse", {duration: 2000});
 	})
 
-	// JQUERY UI
+	// JQUERY UI & Sequenced Animation
 
 	// $('#button_bay').velocity(fadeIn.p, fadeIn.oFast);
 
@@ -55,6 +55,9 @@ $(document).ready(function() {
 
 
 	$.Velocity.RunSequence(sequence);
+
+
+	// PACKAGING EFFECTS
 
 	$.Velocity
 		.RegisterEffect("shadowIn", {
@@ -75,5 +78,13 @@ $(document).ready(function() {
 
 		$("#box7").velocity("shadowIn");
 		$("#box7").velocity("shadowOut");
+
+		// TIMING  MULTIPLIERS
+
+		var M = .5;
+
+		$("#box8").velocity( { opacity: 1, scale: 1.5 }, { duration: 1000 * M });
+
+
 	
 })

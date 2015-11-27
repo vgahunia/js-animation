@@ -108,6 +108,16 @@ body {
 	margin: 0 auto;
 }
 
+#box8 {
+	position: relative;
+	opacity: 0;
+	background-color: rgb(29, 104, 200);
+	text-align: center;
+	width: 300px;
+	margin: 20px auto;
+	top: 70px;
+}
+
 /* CSS ANIIMATIONS */
 
 @keyframes myAnimation {
