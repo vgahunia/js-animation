@@ -46,15 +46,34 @@ $(document).ready(function() {
 
 	$.Velocity({ e: $('#button_bay'), p: {opacity: 1, scale: 1}, o: { duration: 1200, easing: "linear"} });
 
-var sequence = [
-	{ e: $('#box4'), p: { translateX: 100, opacity: 1 }, o: { duration: 1000 } },
-	{ e: $('#box5'), p: { translateX: 200, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
-	{ e: $('#box5'), p: {backgroundColor: '#9f8', top: '+=100px'}, o: {duration: 1000, sequenceQueue: false }},
-	{ e: $('#box6'), p: { translateX: 300, opacity: 1 }, o: { duration: 1000 } }
-];
+	var sequence = [
+		{ e: $('#box4'), p: { translateX: 100, opacity: 1 }, o: { duration: 1000 } },
+		{ e: $('#box5'), p: { translateX: 200, opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
+		{ e: $('#box5'), p: {backgroundColor: '#9f8', top: '+=100px'}, o: {duration: 1000, sequenceQueue: false }},
+		{ e: $('#box6'), p: { translateX: 300, opacity: 1 }, o: { duration: 1000 } }
+	];
 
 
 	$.Velocity.RunSequence(sequence);
 
+	$.Velocity
+		.RegisterEffect("shadowIn", {
+			defaultDuration: 1000,
+			calls: [
+				[ { opacity: 1, scale: 1 }, 0.4 ] ,
+				[ { boxShadowBlur: 50 }, 0.6 ]
+			]
+		})
+
+		.RegisterEffect("shadowOut", {
+			defaultDuration: 800,
+			calls: [
+				[ { boxShadowBlur: 50 }, 0.2 ],
+				[ { opacity: 0, scale: 0 }, 0.8 ]
+			]
+		});
+
+		$("#box7").velocity("shadowIn");
+		$("#box7").velocity("shadowOut");
 	
 })

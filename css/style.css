@@ -98,6 +98,16 @@ body {
 	opacity: .3;
 }
 
+#box7 {
+	position: relative;
+	opacity: .3;
+	background-color: rgb(1, 17, 9);
+	color: rgb(239, 223, 250);
+	width: 300px;
+	height: 150px;
+	margin: 0 auto;
+}
+
 /* CSS ANIIMATIONS */
 
 @keyframes myAnimation {
