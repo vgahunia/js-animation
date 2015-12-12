@@ -57,7 +57,7 @@ $(document).ready(function() {
 	$.Velocity.RunSequence(sequence);
 
 
-	// PACKAGING EFFECTS
+// PACKAGING EFFECTS
 
 	$.Velocity
 		.RegisterEffect("shadowIn", {
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		$("#box7").velocity("shadowIn");
 		$("#box7").velocity("shadowOut");
 
-		// TIMING  MULTIPLIERS
+	// TIMING  MULTIPLIERS
 
 		var M = .5;
 
