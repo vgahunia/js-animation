@@ -1,4 +1,4 @@
-
+6
 $(document).ready(function() {
 	var $div = $('#box1');
 	var $div2 = $('#box2');
@@ -85,6 +85,6 @@ $(document).ready(function() {
 
 		$("#box8").velocity( { opacity: 1, scale: 1.5 }, { duration: 1000 * M });
 
-
+		$('#blast_div').blast({ delimiter: "character" }).css("opacity", "0.5")
 	
 })
