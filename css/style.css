@@ -159,4 +159,31 @@ body {
 	top: 50px;*/
 }
 
+/* CSS Animations */
+
+#cssAniim {
+	overflow: hidden;
+}
+
+#test {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+  font-size: 1.1.em;
+  color: rgb(210, 56, 170);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 25%;
+  }
+}
+
 
